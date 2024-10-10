@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Karla">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Contact Us</h1> 
+        <div class="Name">
+          <div class="firstName">
+            <p>First Name <span class="star">*</span></p>
+            <input type="text" name="firstName" id="firstName" />
+            <div class="error">This field is required</div>
+          </div>
+          <div class="lastName">
+            <p>Last Name <span class="star">*</span></p>
+            <input type="text" name="lastName" id="lastName"/>
+            <div class="error">This field is required</div>
+          </div>
+        </div>
+        <div class="email-address">
+          <p>Email Address <span class="star">*</span></p>
+          <input type="email" name="email" id="email" placeholder="email#example.com" class="input"/>
+          <div class="error">Please enter a valid email address</div>
+        </div>
+
+        <div class="query">
+          <p>Query Type <span class="star">*</span></p>
+          <div class="label-container">
+            <label class="label-radio">
+                <input type="radio" name="radio" value="General Enquiry" />
+                <p>General Enquiry</p>
+                <span></span>
+              </label>
+              <label class="label-radio">
+                <input type="radio" name="radio"  value="Support Request"/>
+                <p>Support Request</p>
+                <span></span>
+              </label>
+          </div>
+          <div class="error">Please select a query type</div>
+        </div>
+
+        <div class="message">
+          <p>Message <span class="star">*</span></p>
+         <textarea  name="message" id="message" rows="5"></textarea>
+         <div class="error">This field is required</div>
+        </div>
+
+        <div class="checkbox-container">
+          <div class="checkbox-text">
+            <div class="checkbox">
+            
+            </div>
+            <p>I consent to being contacted by the team <span class="star">*</span></p>
+          </div>
+          <div class="error">To submit this form, please consent to being contacted</div>
+        </div>
+
+        <div class="button">Submit</div>
+      </div>
+    </main>
+  </body>
+</html>
